@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Evaluation & Hallucination Detection Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo-container">
+                <div class="logo-icon">🛡️</div>
+                <div>
+                    <h1>VeriAI Evaluation Engine</h1>
+                    <p class="subtitle">Multi-Agent Hallucination Detection & RAG Benchmarking Platform</p>
+                </div>
+            </div>
+            <div class="header-badges">
+                <span class="badge badge-info" id="kb-chunk-badge">KB Chunks: Loading...</span>
+                <span class="badge badge-purple">Milestone 1 Active</span>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" data-tab="tab-evaluate">
+                <span class="tab-icon">⚡</span> Evaluate Submission
+            </button>
+            <button class="tab-btn" data-tab="tab-kb">
+                <span class="tab-icon">🔍</span> RAG Knowledge Base Explorer
+            </button>
+            <button class="tab-btn" data-tab="tab-benchmarks">
+                <span class="tab-icon">📊</span> Benchmarks (TruthfulQA & SQuAD)
+            </button>
+            <button class="tab-btn" data-tab="tab-history">
+                <span class="tab-icon">📜</span> Evaluation History
+            </button>
+        </nav>
+
+        <!-- Main Content Body -->
+        <main class="main-content">
+
+            <!-- TAB 1: SUBMIT EVALUATION -->
+            <section id="tab-evaluate" class="tab-content active">
+                <div class="grid-2col">
+                    <!-- Submission Form Card -->
+                    <div class="glass-card">
+                        <div class="card-header">
+                            <h2>Submit Evaluation Input</h2>
+                            <span class="card-subtitle">M1.3 Input Module Interface</span>
+                        </div>
+                        <form id="evaluation-form">
+                            <div class="form-group">
+                                <label for="question">User Question / Prompt <span class="required">*</span></label>
+                                <textarea id="question" rows="3" placeholder="e.g. What happens if you crack your knuckles?" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ai-response">AI Generated Response <span class="required">*</span></label>
+                                <textarea id="ai-response" rows="4" placeholder="e.g. Cracking your knuckles causes arthritis because it damages the joints..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reference-answer">Ground-Truth Reference Answer <span class="optional">(Optional)</span></label>
+                                <textarea id="reference-answer" rows="2" placeholder="e.g. Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="source-document">Source Document / Reference Material <span class="optional">(Optional)</span></label>
+                                <textarea id="source-document" rows="3" placeholder="Paste source text context here. If left empty, RAG vector store will be queried automatically."></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary" id="btn-submit">
+                                    <span class="btn-text">Run Multi-Agent Evaluation</span>
+                                    <span class="spinner hidden" id="eval-spinner"></span>
+                                </button>
+                                <button type="button" class="btn btn-secondary" id="btn-sample-1">Preset Sample (Hallucination)</button>
+                                <button type="button" class="btn btn-secondary" id="btn-sample-2">Preset Sample (Accurate)</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Live Results Card -->
+                    <div class="glass-card" id="results-card">
+                        <div class="card-header">
+                            <h2>Evaluation Verdict</h2>
+                            <span class="verdict-pill badge-neutral" id="verdict-status-pill">Awaiting Submission</span>
+                        </div>
+
+                        <div class="placeholder-content" id="results-placeholder">
+                            <div class="placeholder-icon">📋</div>
+                            <p>Submit an evaluation request on the left to view multi-agent scores, hallucination flags, and verdict synthesis.</p>
+                        </div>
+
+                        <div class="results-body hidden" id="results-body">
+                            <!-- Score Banner -->
+                            <div class="score-banner">
+                                <div class="score-dial">
+                                    <span class="score-number" id="composite-score">0</span>
+                                    <span class="score-label">Composite / 100</span>
+                                </div>
+                                <div class="score-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Hallucination Risk:</span>
+                                        <span class="badge" id="risk-badge">LOW</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Grounding Source:</span>
+                                        <span class="meta-val" id="grounding-source-text">Explicit Reference</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Agent Dimension Breakdown Meters -->
+                            <div class="agent-grid">
+                                <div class="agent-meter-card">
+                                    <div class="meter-header">
+                                        <span>🛡️ Hallucination / Faithfulness</span>
+                                        <strong id="score-hallucination">0</strong>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill fill-hallucination" id="bar-hallucination" style="width: 0%"></div>
+                                    </div>
+                                    <p class="agent-reasoning" id="reasoning-hallucination"></p>
+                                </div>
+
+                                <div class="agent-meter-card">
+                                    <div class="meter-header">
+                                        <span>🎯 Factual Accuracy</span>
+                                        <strong id="score-accuracy">0</strong>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill fill-accuracy" id="bar-accuracy" style="width: 0%"></div>
+                                    </div>
+                                    <p class="agent-reasoning" id="reasoning-accuracy"></p>
+                                </div>
+
+                                <div class="agent-meter-card">
+                                    <div class="meter-header">
+                                        <span>📍 Query Relevance</span>
+                                        <strong id="score-relevance">0</strong>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill fill-relevance" id="bar-relevance" style="width: 0%"></div>
+                                    </div>
+                                    <p class="agent-reasoning" id="reasoning-relevance"></p>
+                                </div>
+
+                                <div class="agent-meter-card">
+                                    <div class="meter-header">
+                                        <span>📝 Coverage Completeness</span>
+                                        <strong id="score-completeness">0</strong>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill fill-completeness" id="bar-completeness" style="width: 0%"></div>
+                                    </div>
+                                    <p class="agent-reasoning" id="reasoning-completeness"></p>
+                                </div>
+                            </div>
+
+                            <!-- Flagged Hallucination Spans -->
+                            <div class="flagged-section hidden" id="flagged-container">
+                                <h3>⚠️ Flagged Hallucinated Claims</h3>
+                                <ul class="flagged-list" id="flagged-list"></ul>
+                            </div>
+
+                            <!-- Executive Feedback -->
+                            <div class="feedback-box">
+                                <h3>Verdict Synthesis Feedback</h3>
+                                <p id="executive-summary"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: KNOWLEDGE BASE EXPLORER -->
+            <section id="tab-kb" class="tab-content">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h2>Reference Knowledge Base Retrieval Explorer</h2>
+                        <span class="card-subtitle">M1.4 Vector Store Indexing & Semantic Search</span>
+                    </div>
+
+                    <div class="kb-search-bar">
+                        <input type="text" id="kb-query-input" placeholder="Enter query to test semantic vector retrieval (e.g. knuckle cracking, Super Bowl 50)...">
+                        <button class="btn btn-primary" id="btn-kb-search">Search Vector Store</button>
+                    </div>
+
+                    <div id="kb-search-results" class="results-grid">
+                        <p class="placeholder-text">Enter a query above to test RAG semantic context retrieval against indexed benchmark chunks.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: BENCHMARK INGESTION & STATS -->
+            <section id="tab-benchmarks" class="tab-content">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h2>Public QA Benchmark Datasets</h2>
+                        <span class="card-subtitle">TruthfulQA & SQuAD Dataset Ingestion Module</span>
+                    </div>
+
+                    <div class="stats-overview" id="stats-overview-cards">
+                        <div class="stat-card">
+                            <div class="stat-num" id="stat-total-chunks">0</div>
+                            <div class="stat-lbl">Indexed Chunks</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num" id="stat-truthful-count">0</div>
+                            <div class="stat-lbl">TruthfulQA Records</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num" id="stat-squad-count">0</div>
+                            <div class="stat-lbl">SQuAD Records</div>
+                        </div>
+                    </div>
+
+                    <div class="ingest-actions-card">
+                        <h3>Trigger Benchmark Ingestion</h3>
+                        <p>Incorporate Hugging Face benchmark datasets into the RAG Reference Knowledge Base for grounded evaluation.</p>
+
+                        <div class="ingest-buttons">
+                            <button class="btn btn-secondary" id="btn-ingest-tqa">
+                                📥 Ingest TruthfulQA Benchmark
+                            </button>
+                            <button class="btn btn-secondary" id="btn-ingest-squad">
+                                📥 Ingest SQuAD Benchmark
+                            </button>
+                        </div>
+                        <p class="ingest-status-msg" id="ingest-status-text"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: EVALUATION HISTORY -->
+            <section id="tab-history" class="tab-content">
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h2>Recent Evaluation Submissions</h2>
+                        <button class="btn btn-secondary" id="btn-refresh-history">Refresh List</button>
+                    </div>
+                    <div class="history-table-container">
+                        <table class="history-table">
+                            <thead>
+                                <tr>
+                                    <th>Timestamp</th>
+                                    <th>Question</th>
+                                    <th>Verdict</th>
+                                    <th>Overall Score</th>
+                                    <th>Risk</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="history-table-body">
+                                <tr><td colspan="6" class="placeholder-text">No prior evaluations submitted.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

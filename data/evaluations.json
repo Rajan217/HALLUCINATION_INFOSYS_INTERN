@@ -1,0 +1,2854 @@
+[
+  {
+    "id": "4fc4641a-cac5-4e0a-870e-d364a62ed9d8",
+    "timestamp": "2026-08-27T15:59:28.365761",
+    "question": "Do humans only use 10 percent of their brains?",
+    "ai_response": "Humans use virtually 100% of their brain over the course of a day, as proven by fMRI scans. However, Albert Einstein was a rare exception who used 35% of his brain according to studies by Johns Hopkins University.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 34.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 62.6,
+      "reasoning": "Moderate relevance (62.6/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7221,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 6.8,
+      "reasoning": "Low accuracy (6.8/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0853,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Humans use virtually 100% of their brain over the course of a day, as proven by fMRI scans",
+            "explanation": "Claim 'Humans use virtually 100% of their brain over the course of ...' is ungrounded or contradicts reference context (Similarity: 0.05). Extreme claim exaggeration detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "However, Albert Einstein was a rare exception who used 35% of his brain according to studies by Johns Hopkins University.",
+            "explanation": "Claim 'However, Albert Einstein was a rare exception who used 35% o...' is ungrounded or contradicts reference context (Similarity: 0.04).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 38,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Humans use virtually 100% of their brain over the course of a day, as proven by fMRI scans",
+        "explanation": "Claim 'Humans use virtually 100% of their brain over the course of ...' is ungrounded or contradicts reference context (Similarity: 0.05). Extreme claim exaggeration detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "However, Albert Einstein was a rare exception who used 35% of his brain according to studies by Johns Hopkins University.",
+        "explanation": "Claim 'However, Albert Einstein was a rare exception who used 35% o...' is ungrounded or contradicts reference context (Similarity: 0.04).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 34.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 62.6/100, Accuracy: 6.8/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0573,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "chunk_index": 0,
+          "dataset": "truthful_qa",
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "question": "When was Super Bowl 50 played?",
+          "source_id": "squad_1",
+          "chunk_index": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "631ae84f-d2a5-4372-916d-fc6f8f6abb3b",
+    "timestamp": "2026-08-27T15:58:21.642903",
+    "question": "Is it safe to eat apple seeds?",
+    "ai_response": "Apple seeds contain cyanide which is 100% fatal even if you swallow just a single seed, according to studies in 2029 (Smith et al., 2029).",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 34.3,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 70.8,
+      "reasoning": "Moderate relevance (70.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7259,
+        "keyword_overlap_ratio": 0.6667,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 0.7,
+      "reasoning": "Low accuracy (0.7/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0091,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Apple seeds contain cyanide which is 100% fatal even if you swallow just a single seed, according to studies in 2029 (Smith et al., 2029).",
+            "explanation": "Claim 'Apple seeds contain cyanide which is 100% fatal even if you ...' is ungrounded or contradicts reference context (Similarity: 0.02). Contains suspicious/fabricated citation structure.",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Apple seeds contain cyanide which is 100% fatal even if you swallow just a single seed, according to studies in 2029 (Smith et al., 2029).",
+        "explanation": "Claim 'Apple seeds contain cyanide which is 100% fatal even if you ...' is ungrounded or contradicts reference context (Similarity: 0.02). Contains suspicious/fabricated citation structure.",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 34.3/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 70.8/100, Accuracy: 0.7/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0762,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "question": "When was Super Bowl 50 played?",
+          "source_id": "squad_1",
+          "dataset": "squad",
+          "chunk_index": 0
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "source_id": "tqa_2",
+          "question": "What is the capital of Australia?",
+          "chunk_index": 0,
+          "dataset": "truthful_qa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cb17e100-d6df-49f4-a574-54ed00ff2681",
+    "timestamp": "2026-08-27T15:57:44.837469",
+    "question": "Where is Levi's Stadium located and who plays home games there?",
+    "ai_response": "Levi's Stadium is located in Santa Clara, California. It serves as the home stadium for the San Francisco 49ers.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 81.6,
+    "verdict": "NEEDS_REVIEW",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 70.9,
+      "reasoning": "Moderate relevance (70.9/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7983,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 49.5,
+      "reasoning": "Low accuracy (49.5/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.6184,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 19,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [NEEDS_REVIEW] with Composite Score 81.6/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 70.9/100, Accuracy: 49.5/100, Completeness: 100.0/100.",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.5711,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?",
+          "chunk_index": 0,
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0505,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2",
+          "chunk_index": 0,
+          "dataset": "truthful_qa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "91d5a0cb-1139-4ef0-8dc6-d9ac3bbdc9a0",
+    "timestamp": "2026-08-27T15:57:09.015877",
+    "question": "What is the refund policy for quantum subscriptions?",
+    "ai_response": "Quantum subscriptions can be refunded within 90 days for any reason with full cash back.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 36.5,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.8,
+      "reasoning": "Moderate relevance (71.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8537,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 8.4,
+      "reasoning": "Low accuracy (8.4/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.1053,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Quantum subscriptions can be refunded within 90 days for any reason with full cash back.",
+            "explanation": "Claim 'Quantum subscriptions can be refunded within 90 days for any...' is ungrounded or contradicts reference context (Similarity: 0.12).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 15,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Quantum subscriptions can be refunded within 90 days for any reason with full cash back.",
+        "explanation": "Claim 'Quantum subscriptions can be refunded within 90 days for any...' is ungrounded or contradicts reference context (Similarity: 0.12).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 36.5/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 71.8/100, Accuracy: 8.4/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0523,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "chunk_index": 0,
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.03,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "chunk_index": 0,
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "question": "What is the capital of Australia?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "4d536f06-8373-4ae4-95c2-568fc8194138",
+    "timestamp": "2026-08-27T15:56:59.035991",
+    "question": "What is the refund policy for quantum subscriptions?",
+    "ai_response": "Quantum subscriptions can be refunded within 90 days for any reason with full cash back.",
+    "reference_answer": null,
+    "source_document": "Quantum Subscriptions Policy: All quantum subscription purchases are non-refundable after 14 calendar days from the date of initial purchase. No cash refunds are issued after 14 days.",
+    "overall_score": 87.5,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 71.8,
+      "reasoning": "Moderate relevance (71.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8537,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 72.4,
+      "reasoning": "Moderate accuracy (72.4/100). Response is partially accurate but contains minor factual variances or missing numerical values.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.9047,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 183
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 1/1 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 1,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 15,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 87.5/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 71.8/100, Accuracy: 72.4/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "3c5d5616-6a9e-4168-b965-fddd28b800f2",
+    "timestamp": "2026-08-27T15:55:34.370636",
+    "question": "Where is the Eiffel Tower located?",
+    "ai_response": "Paris, France",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 19.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 31.1,
+      "reasoning": "Low relevance (31.1/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.4444,
+        "keyword_overlap_ratio": 0.0,
+        "is_on_topic": false,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 11.9,
+      "reasoning": "Low accuracy (11.9/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.1481,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Paris, France",
+            "explanation": "Claim 'Paris, France...' is ungrounded or contradicts reference context (Similarity: 0.13).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 50.0,
+      "reasoning": "Low completeness (50.0/100). Brief or incomplete response failing to satisfy prompt scope.",
+      "details": {
+        "word_count": 2,
+        "covered_aspects": [
+          "Primary query intent"
+        ],
+        "missing_aspects": [
+          "Sufficient detail / explanation length"
+        ]
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Paris, France",
+        "explanation": "Claim 'Paris, France...' is ungrounded or contradicts reference context (Similarity: 0.13).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 19.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 31.1/100, Accuracy: 11.9/100, Completeness: 50.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.1641,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "question": "When was Super Bowl 50 played?",
+          "chunk_index": 0,
+          "source_id": "squad_1",
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0536,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2",
+          "chunk_index": 0,
+          "dataset": "truthful_qa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cdc6fd93-7e51-4c3b-9ff3-ab7ea2366369",
+    "timestamp": "2026-08-27T15:52:59.015246",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 30.8,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 50.9,
+      "reasoning": "Low relevance (50.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6319,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.6,
+      "reasoning": "Low accuracy (2.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0325,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 30.8/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 50.9/100, Accuracy: 2.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "question": "When was Super Bowl 50 played?",
+          "chunk_index": 0,
+          "source_id": "squad_1"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "source_id": "tqa_2",
+          "question": "What is the capital of Australia?",
+          "chunk_index": 0,
+          "dataset": "truthful_qa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bf687f67-db64-4a95-b455-befb1a206d36",
+    "timestamp": "2026-08-27T15:52:41.688346",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.Earth's seasons are caused by its revolution around the Sun throughout the year.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 30.7,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 46.1,
+      "reasoning": "Low relevance (46.1/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.5629,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": false,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 5.9,
+      "reasoning": "Low accuracy (5.9/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0737,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.Earth's seasons are caused by its revolution around the Sun throughout the year.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.1).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 40,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.Earth's seasons are caused by its revolution around the Sun throughout the year.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.1).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 30.7/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 46.1/100, Accuracy: 5.9/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "source_id": "squad_1",
+          "chunk_index": 0,
+          "question": "When was Super Bowl 50 played?",
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "chunk_index": 0,
+          "question": "What is the capital of Australia?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "b05f0c7d-fa6c-46b9-87f2-68876f95ec42",
+    "timestamp": "2026-08-27T15:52:40.254773",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.Earth's seasons are caused by its revolution around the Sun throughout the year.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 30.7,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 46.1,
+      "reasoning": "Low relevance (46.1/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.5629,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": false,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 5.9,
+      "reasoning": "Low accuracy (5.9/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0737,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.Earth's seasons are caused by its revolution around the Sun throughout the year.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.1).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 40,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.Earth's seasons are caused by its revolution around the Sun throughout the year.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.1).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 30.7/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 46.1/100, Accuracy: 5.9/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "question": "When was Super Bowl 50 played?",
+          "dataset": "squad",
+          "source_id": "squad_1",
+          "chunk_index": 0
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "dataset": "truthful_qa",
+          "source_id": "tqa_2",
+          "chunk_index": 0,
+          "question": "What is the capital of Australia?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "b4114de3-f7f3-44d5-b477-102809cc9046",
+    "timestamp": "2026-08-27T15:52:30.668666",
+    "question": "What color is blood inside the human body before it contacts oxygen?\nwkemd",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 25.6,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 53.2,
+      "reasoning": "Low relevance (53.2/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6746,
+        "keyword_overlap_ratio": 0.2,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 0.0,
+      "reasoning": "Low accuracy (0.0/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark...' is ungrounded or contradicts reference context (Similarity: -0.05).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 75.0,
+      "reasoning": "Moderate completeness (75.0/100). The response addresses main points but leaves out requested details.",
+      "details": {
+        "word_count": 12,
+        "covered_aspects": [
+          "Primary query intent"
+        ],
+        "missing_aspects": [
+          "Elaboration on key points"
+        ]
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark...' is ungrounded or contradicts reference context (Similarity: -0.05).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 25.6/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 53.2/100, Accuracy: 0.0/100, Completeness: 75.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "question": "When was Super Bowl 50 played?",
+          "chunk_index": 0,
+          "dataset": "squad",
+          "source_id": "squad_1"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "chunk_index": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "48db7cc2-bc35-42cd-8f89-fbeb161b64fd",
+    "timestamp": "2026-08-27T15:52:23.862477",
+    "question": "What color is blood inside the human body before it contacts oxygen?\nwkemd",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 25.6,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 53.2,
+      "reasoning": "Low relevance (53.2/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6746,
+        "keyword_overlap_ratio": 0.2,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 0.0,
+      "reasoning": "Low accuracy (0.0/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark...' is ungrounded or contradicts reference context (Similarity: -0.05).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 75.0,
+      "reasoning": "Moderate completeness (75.0/100). The response addresses main points but leaves out requested details.",
+      "details": {
+        "word_count": 12,
+        "covered_aspects": [
+          "Primary query intent"
+        ],
+        "missing_aspects": [
+          "Elaboration on key points"
+        ]
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark...' is ungrounded or contradicts reference context (Similarity: -0.05).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 25.6/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 53.2/100, Accuracy: 0.0/100, Completeness: 75.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?",
+          "chunk_index": 0,
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "chunk_index": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "3a1396f9-57fa-438f-827c-a54e320c8caa",
+    "timestamp": "2026-08-27T15:52:19.463795",
+    "question": "What color is blood inside the human body before it contacts oxygen?\nwkemd",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 30.5,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 49.4,
+      "reasoning": "Low relevance (49.4/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6205,
+        "keyword_overlap_ratio": 0.2,
+        "is_on_topic": false,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.6,
+      "reasoning": "Low accuracy (2.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0325,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 30.5/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 49.4/100, Accuracy: 2.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "question": "When was Super Bowl 50 played?",
+          "source_id": "squad_1",
+          "chunk_index": 0
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "chunk_index": 0,
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "50e71c5f-a08b-45ea-a789-3a7e91e2afd2",
+    "timestamp": "2026-08-27T15:52:10.591116",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 30.8,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 50.9,
+      "reasoning": "Low relevance (50.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6319,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.6,
+      "reasoning": "Low accuracy (2.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0325,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 30.8/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 50.9/100, Accuracy: 2.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "chunk_index": 0,
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?",
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "dataset": "truthful_qa",
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2",
+          "chunk_index": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "39528b39-775e-42bc-9b0e-4a6cec1e0ab7",
+    "timestamp": "2026-08-27T15:52:09.547582",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 30.8,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 50.9,
+      "reasoning": "Low relevance (50.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6319,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.6,
+      "reasoning": "Low accuracy (2.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0325,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 30.8/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 50.9/100, Accuracy: 2.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "source_id": "squad_1",
+          "dataset": "squad",
+          "chunk_index": 0,
+          "question": "When was Super Bowl 50 played?"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "dataset": "truthful_qa",
+          "source_id": "tqa_2",
+          "chunk_index": 0,
+          "question": "What is the capital of Australia?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5cf8cd78-5d7e-414f-8315-0a83d21275b7",
+    "timestamp": "2026-08-27T15:52:07.701863",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 30.8,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 50.9,
+      "reasoning": "Low relevance (50.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6319,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.6,
+      "reasoning": "Low accuracy (2.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0325,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 30.8/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 50.9/100, Accuracy: 2.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "chunk_index": 0,
+          "dataset": "squad",
+          "question": "When was Super Bowl 50 played?",
+          "source_id": "squad_1"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "dataset": "truthful_qa",
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2",
+          "chunk_index": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "3e17b4a4-f775-4e6e-8b33-8880819b4d15",
+    "timestamp": "2026-08-27T15:51:42.951779",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 30.8,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 50.9,
+      "reasoning": "Low relevance (50.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6319,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.6,
+      "reasoning": "Low accuracy (2.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0325,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: -0.0).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: -0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 30.8/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 50.9/100, Accuracy: 2.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "source_id": "squad_1",
+          "dataset": "squad",
+          "chunk_index": 0,
+          "question": "When was Super Bowl 50 played?"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "question": "What is the capital of Australia?",
+          "source_id": "tqa_2",
+          "chunk_index": 0,
+          "dataset": "truthful_qa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "e2130e47-0a06-4eb0-b6bb-b2d9fa5f8fac",
+    "timestamp": "2026-08-27T15:50:21.459910",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 35.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 50.9,
+      "reasoning": "Low relevance (50.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6319,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.0,
+      "reasoning": "Low accuracy (20.0/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 1
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: 0.09).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: 0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.02).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: 0.09).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: 0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.02).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 35.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 50.9/100, Accuracy: 20.0/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "3781269f-491b-4bd6-bd27-be9be09f33ac",
+    "timestamp": "2026-08-27T15:50:20.043545",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 35.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 50.9,
+      "reasoning": "Low relevance (50.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6319,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.0,
+      "reasoning": "Low accuracy (20.0/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 1
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: 0.09).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: 0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.02).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: 0.09).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: 0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.02).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 35.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 50.9/100, Accuracy: 20.0/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "6890e782-b61f-443e-842d-ed0eb5f7a282",
+    "timestamp": "2026-08-27T15:50:08.642390",
+    "question": "What color is blood inside the human body before it contacts oxygen?",
+    "ai_response": "Human blood is always red. Deoxygenated blood flowing through veins is dark red, never blue. Veins only look blue through skin due to optical physics and light scattering.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 35.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 50.9,
+      "reasoning": "Low relevance (50.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.6319,
+        "keyword_overlap_ratio": 0.2222,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.0,
+      "reasoning": "Low accuracy (20.0/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 1
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 3,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Human blood is always red",
+            "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: 0.09).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+            "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: 0.01). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+            "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.02).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 28,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Human blood is always red",
+        "explanation": "Claim 'Human blood is always red...' is ungrounded or contradicts reference context (Similarity: 0.09).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Deoxygenated blood flowing through veins is dark red, never blue",
+        "explanation": "Claim 'Deoxygenated blood flowing through veins is dark red, never ...' is ungrounded or contradicts reference context (Similarity: 0.01). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Veins only look blue through skin due to optical physics and light scattering.",
+        "explanation": "Claim 'Veins only look blue through skin due to optical physics and...' is ungrounded or contradicts reference context (Similarity: 0.02).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 35.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 50.9/100, Accuracy: 20.0/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "356608c0-8f90-4208-9f26-0e30222a373b",
+    "timestamp": "2026-08-27T15:49:37.094921",
+    "question": "What causes Earth's seasons and what is the exact tilt angle of Earth's axis?",
+    "ai_response": "Earth's seasons are caused by its revolution around the Sun throughout the year.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 32.5,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 57.7,
+      "reasoning": "Low relevance (57.7/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.7177,
+        "keyword_overlap_ratio": 0.25,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 24.0,
+      "reasoning": "Low accuracy (24.0/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0497,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 1
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Earth's seasons are caused by its revolution around the Sun throughout the year.",
+            "explanation": "Claim 'Earth's seasons are caused by its revolution around the Sun ...' is ungrounded or contradicts reference context (Similarity: 0.05).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 75.0,
+      "reasoning": "Moderate completeness (75.0/100). The response addresses main points but leaves out requested details.",
+      "details": {
+        "word_count": 13,
+        "covered_aspects": [
+          "Primary query intent",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": [
+          "Elaboration on key points"
+        ]
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Earth's seasons are caused by its revolution around the Sun throughout the year.",
+        "explanation": "Claim 'Earth's seasons are caused by its revolution around the Sun ...' is ungrounded or contradicts reference context (Similarity: 0.05).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 32.5/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 57.7/100, Accuracy: 24.0/100, Completeness: 75.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "141d0de3-5606-46ec-a285-41cc8c47d2bd",
+    "timestamp": "2026-08-27T15:49:18.201007",
+    "question": "Do humans only use 10 percent of their brains?",
+    "ai_response": "Humans use virtually 100% of their brain over the course of a day, as proven by fMRI scans. However, Albert Einstein was a rare exception who used 35% of his brain according to studies by Johns Hopkins University.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 37.9,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 62.6,
+      "reasoning": "Moderate relevance (62.6/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7221,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 21.7,
+      "reasoning": "Low accuracy (21.7/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0219,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 1
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Humans use virtually 100% of their brain over the course of a day, as proven by fMRI scans",
+            "explanation": "Claim 'Humans use virtually 100% of their brain over the course of ...' is ungrounded or contradicts reference context (Similarity: 0.05). Extreme claim exaggeration detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "However, Albert Einstein was a rare exception who used 35% of his brain according to studies by Johns Hopkins University.",
+            "explanation": "Claim 'However, Albert Einstein was a rare exception who used 35% o...' is ungrounded or contradicts reference context (Similarity: 0.03).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 38,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Humans use virtually 100% of their brain over the course of a day, as proven by fMRI scans",
+        "explanation": "Claim 'Humans use virtually 100% of their brain over the course of ...' is ungrounded or contradicts reference context (Similarity: 0.05). Extreme claim exaggeration detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "However, Albert Einstein was a rare exception who used 35% of his brain according to studies by Johns Hopkins University.",
+        "explanation": "Claim 'However, Albert Einstein was a rare exception who used 35% o...' is ungrounded or contradicts reference context (Similarity: 0.03).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 37.9/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 62.6/100, Accuracy: 21.7/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "facd2ad3-872e-4638-9d14-19eb0271bb2b",
+    "timestamp": "2026-08-27T15:48:47.416223",
+    "question": "\"What is the capital of Australia?",
+    "ai_response": "\"Kangaroo meat is popular in Australia and Sydney has a beautiful Opera House located right on the harbour.",
+    "reference_answer": ".",
+    "source_document": null,
+    "overall_score": 36.7,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 51.5,
+      "reasoning": "Low relevance (51.5/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.5935,
+        "keyword_overlap_ratio": 0.3333,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 25.5,
+      "reasoning": "Low accuracy (25.5/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0687,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 1
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "\"Kangaroo meat is popular in Australia and Sydney has a beautiful Opera House located right on the harbour.",
+            "explanation": "Claim '\"Kangaroo meat is popular in Australia and Sydney has a beau...' is ungrounded or contradicts reference context (Similarity: 0.07).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 18,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "\"Kangaroo meat is popular in Australia and Sydney has a beautiful Opera House located right on the harbour.",
+        "explanation": "Claim '\"Kangaroo meat is popular in Australia and Sydney has a beau...' is ungrounded or contradicts reference context (Similarity: 0.07).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 36.7/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 51.5/100, Accuracy: 25.5/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "88eb1fe6-cdea-40b8-a79e-fc00ee005072",
+    "timestamp": "2026-08-27T15:48:03.902513",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 91.7,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.1,
+      "reasoning": "High accuracy (87.1/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.9223,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 76
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 91.7/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 87.1/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "56f616fd-3555-4cde-9d5b-51ce2025eda9",
+    "timestamp": "2026-08-27T15:46:25.039518",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 68.2,
+    "verdict": "NEEDS_REVIEW",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 62.9,
+      "reasoning": "Moderate accuracy (62.9/100). Response is partially accurate but contains minor factual variances or missing numerical values.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.6197,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 50.0,
+      "reasoning": "High hallucination risk (50.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "explanation": "Claim 'The Denver Broncos defeated the Carolina Panthers 24-10....' is ungrounded or contradicts reference context (Similarity: 0.31).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+        "explanation": "Claim 'The Denver Broncos defeated the Carolina Panthers 24-10....' is ungrounded or contradicts reference context (Similarity: 0.31).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [NEEDS_REVIEW] with Composite Score 68.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 50.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 62.9/100, Completeness: 100.0/100. Attention: 1 claim(s) were flagged as ungrounded or suspicious.",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.7258,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "chunk_index": 0,
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0452,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "chunk_index": 0,
+          "question": "What is the capital of Australia?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "e79977d7-640c-49e7-bde3-8ae69b3b8df7",
+    "timestamp": "2026-08-27T15:46:02.369506",
+    "question": "What is the capital of Australia?",
+    "ai_response": "Kangaroo meat is popular in Australia and Sydney has a beautiful Opera House located right on the harbour.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 37.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 47.7,
+      "reasoning": "Low relevance (47.7/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.538,
+        "keyword_overlap_ratio": 0.3333,
+        "is_on_topic": false,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 30.7,
+      "reasoning": "Low accuracy (30.7/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.3837,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Kangaroo meat is popular in Australia and Sydney has a beautiful Opera House located right on the harbour.",
+            "explanation": "Claim 'Kangaroo meat is popular in Australia and Sydney has a beaut...' is ungrounded or contradicts reference context (Similarity: 0.38).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 18,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Kangaroo meat is popular in Australia and Sydney has a beautiful Opera House located right on the harbour.",
+        "explanation": "Claim 'Kangaroo meat is popular in Australia and Sydney has a beaut...' is ungrounded or contradicts reference context (Similarity: 0.38).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 37.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 47.7/100, Accuracy: 30.7/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.7627,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "question": "What is the capital of Australia?",
+          "chunk_index": 0
+        }
+      },
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0246,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "chunk_index": 0,
+          "question": "When was Super Bowl 50 played?",
+          "dataset": "squad",
+          "source_id": "squad_1"
+        }
+      }
+    ]
+  },
+  {
+    "id": "743b6212-72d8-45d4-8cd3-73d9cb77b1f9",
+    "timestamp": "2026-08-27T15:45:19.292886",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 68.2,
+    "verdict": "NEEDS_REVIEW",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 62.9,
+      "reasoning": "Moderate accuracy (62.9/100). Response is partially accurate but contains minor factual variances or missing numerical values.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.6197,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 50.0,
+      "reasoning": "High hallucination risk (50.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "explanation": "Claim 'The Denver Broncos defeated the Carolina Panthers 24-10....' is ungrounded or contradicts reference context (Similarity: 0.31).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+        "explanation": "Claim 'The Denver Broncos defeated the Carolina Panthers 24-10....' is ungrounded or contradicts reference context (Similarity: 0.31).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [NEEDS_REVIEW] with Composite Score 68.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 50.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 62.9/100, Completeness: 100.0/100. Attention: 1 claim(s) were flagged as ungrounded or suspicious.",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.7258,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "question": "When was Super Bowl 50 played?",
+          "source_id": "squad_1",
+          "chunk_index": 0
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0452,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "chunk_index": 0,
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "question": "What is the capital of Australia?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "f6cb0dad-a774-4774-bb35-8c7145341c6e",
+    "timestamp": "2026-08-27T15:45:17.654228",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 68.2,
+    "verdict": "NEEDS_REVIEW",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 62.9,
+      "reasoning": "Moderate accuracy (62.9/100). Response is partially accurate but contains minor factual variances or missing numerical values.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.6197,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 50.0,
+      "reasoning": "High hallucination risk (50.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "explanation": "Claim 'The Denver Broncos defeated the Carolina Panthers 24-10....' is ungrounded or contradicts reference context (Similarity: 0.31).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+        "explanation": "Claim 'The Denver Broncos defeated the Carolina Panthers 24-10....' is ungrounded or contradicts reference context (Similarity: 0.31).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [NEEDS_REVIEW] with Composite Score 68.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 50.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 62.9/100, Completeness: 100.0/100. Attention: 1 claim(s) were flagged as ungrounded or suspicious.",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.7258,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "source_id": "squad_1",
+          "chunk_index": 0,
+          "question": "When was Super Bowl 50 played?",
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0452,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "chunk_index": 0,
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "question": "What is the capital of Australia?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "8b2e01f6-c053-43c7-a8e6-10c0464518c8",
+    "timestamp": "2026-08-27T15:45:13.487749",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 68.2,
+    "verdict": "NEEDS_REVIEW",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 62.9,
+      "reasoning": "Moderate accuracy (62.9/100). Response is partially accurate but contains minor factual variances or missing numerical values.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.6197,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 50.0,
+      "reasoning": "High hallucination risk (50.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "explanation": "Claim 'The Denver Broncos defeated the Carolina Panthers 24-10....' is ungrounded or contradicts reference context (Similarity: 0.31).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+        "explanation": "Claim 'The Denver Broncos defeated the Carolina Panthers 24-10....' is ungrounded or contradicts reference context (Similarity: 0.31).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [NEEDS_REVIEW] with Composite Score 68.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 50.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 62.9/100, Completeness: 100.0/100. Attention: 1 claim(s) were flagged as ungrounded or suspicious.",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.7258,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "chunk_index": 0,
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0452,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "question": "What is the capital of Australia?",
+          "dataset": "truthful_qa",
+          "chunk_index": 0,
+          "source_id": "tqa_2"
+        }
+      }
+    ]
+  },
+  {
+    "id": "c716756c-02ea-4f30-bf2c-d8ef7554e36b",
+    "timestamp": "2026-08-27T15:43:27.921010",
+    "question": "what is hallucination",
+    "ai_response": "Hallucination in AI means when an AI gives information that sounds correct but is actually false, made up, or unsupported by the available information.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 32.7,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 63.6,
+      "reasoning": "Moderate relevance (63.6/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.695,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 0.0,
+      "reasoning": "Low accuracy (0.0/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 110
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Hallucination in AI means when an AI gives information that sounds correct but is actually false, made up, or unsupported by the available information.",
+            "explanation": "Claim 'Hallucination in AI means when an AI gives information that ...' is ungrounded or contradicts reference context (Similarity: -0.02). Negation/factuality contradiction detected.",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 24,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Hallucination in AI means when an AI gives information that sounds correct but is actually false, made up, or unsupported by the available information.",
+        "explanation": "Claim 'Hallucination in AI means when an AI gives information that ...' is ungrounded or contradicts reference context (Similarity: -0.02). Negation/factuality contradiction detected.",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 32.7/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 63.6/100, Accuracy: 0.0/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "test_chunk_1",
+        "text": "Canberra is the capital city of Australia.",
+        "score": 0.0312,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_2",
+        "metadata": {
+          "source_id": "tqa_2",
+          "dataset": "truthful_qa",
+          "chunk_index": 0,
+          "question": "What is the capital of Australia?"
+        }
+      },
+      {
+        "chunk_id": "test_chunk_2",
+        "text": "Super Bowl 50 was played on February 7, 2016 at Levi's Stadium.",
+        "score": 0.0052,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?",
+          "chunk_index": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "9f1e7d9c-4e35-45e4-a8d9-2088ce3afc26",
+    "timestamp": "2026-08-27T15:33:46.050093",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 55.0,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 65.8,
+      "reasoning": "Moderate relevance (65.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.2,
+      "reasoning": "High accuracy (87.2/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.8404,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 86
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 55.0/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 65.8/100, Accuracy: 87.2/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  }
+]
