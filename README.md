@@ -153,3 +153,4 @@ pytest tests/
 
 - 📕 [Research & Technical Understanding](docs/research_and_tech_stack.md) (`M1.1`)
 - 📘 [System Architecture & Agent Specification](docs/architecture.md) (`M1.2`)
+- 📗 [Milestone 2 Walkthrough & Validation Report](docs/walkthrough.md) (`M2.1 - M2.4`)
