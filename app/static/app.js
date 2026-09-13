@@ -121,6 +121,27 @@ document.addEventListener('DOMContentLoaded', () => {
         updateMeter('relevance', verdict.relevance);
         updateMeter('completeness', verdict.completeness);
 
+        // Supporting Evidence Rendering
+        const evidenceContainer = document.getElementById('evidence-container');
+        const evidenceList = document.getElementById('evidence-list');
+        evidenceList.innerHTML = '';
+
+        const supportingEvid = (verdict.accuracy && verdict.accuracy.details && verdict.accuracy.details.supporting_evidence) || [];
+        if (supportingEvid.length > 0) {
+            evidenceContainer.classList.remove('hidden');
+            supportingEvid.forEach(ev => {
+                const li = document.createElement('li');
+                li.style.padding = '0.4rem 0';
+                li.style.fontSize = '0.85rem';
+                li.style.color = '#cbd5e1';
+                li.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
+                li.innerHTML = `✔️ <em>"${ev}"</em>`;
+                evidenceList.appendChild(li);
+            });
+        } else {
+            evidenceContainer.classList.add('hidden');
+        }
+
         // Flagged Claims
         const flaggedContainer = document.getElementById('flagged-container');
         const flaggedList = document.getElementById('flagged-list');
@@ -130,7 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
             flaggedContainer.classList.remove('hidden');
             verdict.flagged_claims.forEach(fc => {
                 const li = document.createElement('li');
-                li.innerHTML = `<strong>[${fc.severity}] Claim:</strong> "${fc.claim_text}" <br><span style="color: #94a3b8; font-size: 0.8rem;">Reason: ${fc.explanation}</span>`;
+                const cat = fc.category || 'UNGROUNDED';
+                li.innerHTML = `<strong>[${cat} | ${fc.severity}] Claim:</strong> "${fc.claim_text}" <br><span style="color: #94a3b8; font-size: 0.8rem;">Explanation: ${fc.explanation}</span>` +
+                    (fc.supporting_evidence ? `<br><span style="color: #64748b; font-size: 0.78rem;">Context Match: <em>"${fc.supporting_evidence}"</em></span>` : '');
                 flaggedList.appendChild(li);
             });
         } else {

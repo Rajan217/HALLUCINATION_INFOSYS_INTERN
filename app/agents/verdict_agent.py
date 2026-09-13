@@ -44,7 +44,9 @@ class VerdictAgent:
             FlaggedClaim(
                 claim_text=fc["claim_text"],
                 explanation=fc["explanation"],
-                severity=fc.get("severity", "MEDIUM")
+                severity=fc.get("severity", "MEDIUM"),
+                category=fc.get("category", "UNGROUNDED"),
+                supporting_evidence=fc.get("supporting_evidence")
             ) for fc in raw_flagged
         ]
 

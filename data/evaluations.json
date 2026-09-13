@@ -1,5 +1,1740 @@
 [
   {
+    "id": "144ca812-105b-42e5-a323-e82e96dd74b7",
+    "timestamp": "2026-09-07T14:17:31.545270",
+    "question": "what is hallucination",
+    "ai_response": "a hallucinatipn is a sensory perception that occurs in tabsence of an external stimulus",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 22.7,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 35.9,
+      "reasoning": "Low relevance (35.9/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.5123,
+        "keyword_overlap_ratio": 0.0,
+        "is_on_topic": false,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.2,
+      "reasoning": "Low accuracy (2.2/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0281,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "a hallucinatipn is a sensory perception that occurs in tabsence of an external stimulus",
+            "explanation": "Claim 'a hallucinatipn is a sensory perception that occurs in tabse...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 75.0,
+      "reasoning": "Moderate completeness (75.0/100). The response addresses main points but leaves out requested details.",
+      "details": {
+        "word_count": 14,
+        "covered_aspects": [
+          "Primary query intent"
+        ],
+        "missing_aspects": [
+          "Elaboration on key points"
+        ]
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "a hallucinatipn is a sensory perception that occurs in tabsence of an external stimulus",
+        "explanation": "Claim 'a hallucinatipn is a sensory perception that occurs in tabse...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 22.7/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 35.9/100, Accuracy: 2.2/100, Completeness: 75.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "chunk_index": 0,
+          "category": "Sports History",
+          "question": "When was Super Bowl 50 played?",
+          "answer": "February 7, 2016",
+          "dataset": "squad",
+          "source_id": "squad_1"
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "source_id": "squad_3",
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "question": "What causes the Earth's seasons?",
+          "dataset": "squad",
+          "category": "Astronomy & Earth Science",
+          "chunk_index": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "cd39fcc0-f4d5-4fdc-87fd-816658f52fe3",
+    "timestamp": "2026-09-07T14:16:05.598398",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 91.7,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.1,
+      "reasoning": "High accuracy (87.1/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.9223,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 76
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 91.7/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 87.1/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "225f6757-953b-4357-8503-d0264cff66cc",
+    "timestamp": "2026-09-07T14:15:33.672035",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 55.0,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 65.8,
+      "reasoning": "Moderate relevance (65.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.2,
+      "reasoning": "High accuracy (87.2/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.8404,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 86
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 55.0/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 65.8/100, Accuracy: 87.2/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "3184249d-17e2-4c81-ba62-63bb1f750b2b",
+    "timestamp": "2026-09-07T13:03:58.822380",
+    "question": "what is hallucination",
+    "ai_response": "hallucination is the sensory perception that occurs in the absence of external stimulus",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 28.7,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 64.9,
+      "reasoning": "Moderate relevance (64.9/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7122,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.9,
+      "reasoning": "Low accuracy (2.9/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0362,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "hallucination is the sensory perception that occurs in the absence of external stimulus",
+            "explanation": "Claim 'hallucination is the sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 75.0,
+      "reasoning": "Moderate completeness (75.0/100). The response addresses main points but leaves out requested details.",
+      "details": {
+        "word_count": 13,
+        "covered_aspects": [
+          "Primary query intent"
+        ],
+        "missing_aspects": [
+          "Elaboration on key points"
+        ]
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "hallucination is the sensory perception that occurs in the absence of external stimulus",
+        "explanation": "Claim 'hallucination is the sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 28.7/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 64.9/100, Accuracy: 2.9/100, Completeness: 75.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "question": "When was Super Bowl 50 played?",
+          "source_id": "squad_1",
+          "chunk_index": 0,
+          "category": "Sports History",
+          "answer": "February 7, 2016",
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "dataset": "squad",
+          "source_id": "squad_3",
+          "category": "Astronomy & Earth Science",
+          "question": "What causes the Earth's seasons?",
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "chunk_index": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "90225976-5566-46e2-b351-d2c7969fbc72",
+    "timestamp": "2026-09-07T13:02:28.116551",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 55.0,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 65.8,
+      "reasoning": "Moderate relevance (65.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.2,
+      "reasoning": "High accuracy (87.2/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.8404,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 86
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 55.0/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 65.8/100, Accuracy: 87.2/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "171a8d39-eb81-45ad-b298-70de16cb4c95",
+    "timestamp": "2026-09-07T13:01:52.008985",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 91.7,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.1,
+      "reasoning": "High accuracy (87.1/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.9223,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 76
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 91.7/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 87.1/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "e7d295d3-0ade-4a45-8199-73b341d2c4b1",
+    "timestamp": "2026-09-04T13:07:09.993689",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 55.0,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 65.8,
+      "reasoning": "Moderate relevance (65.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.2,
+      "reasoning": "High accuracy (87.2/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.8404,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 86
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 55.0/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 65.8/100, Accuracy: 87.2/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "8b9119da-ed7b-4fa2-be68-819c20ced9f1",
+    "timestamp": "2026-09-04T13:06:29.988331",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 91.7,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.1,
+      "reasoning": "High accuracy (87.1/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.9223,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 76
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 91.7/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 87.1/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "a95b6736-ae96-4964-94b2-f93f140ffa49",
+    "timestamp": "2026-09-03T13:27:46.270903",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 91.7,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.1,
+      "reasoning": "High accuracy (87.1/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.9223,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 76
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 91.7/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 87.1/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "40dc2936-f336-46bb-b36b-305d27ea36aa",
+    "timestamp": "2026-09-03T13:27:42.910016",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 55.0,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 65.8,
+      "reasoning": "Moderate relevance (65.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.2,
+      "reasoning": "High accuracy (87.2/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.8404,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 86
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 55.0/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 65.8/100, Accuracy: 87.2/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "ef96e29b-2c27-4647-bb1b-12a9cb09d4dc",
+    "timestamp": "2026-09-03T12:38:19.255224",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 91.7,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 74.7,
+      "reasoning": "Moderate relevance (74.7/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.1,
+      "reasoning": "High accuracy (87.1/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.9223,
+        "numerical_entity_accuracy": 0.6667,
+        "reference_length": 76
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 91.7/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 74.7/100, Accuracy: 87.1/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "4ecd9995-a8c1-4da3-b04a-03a1bd46cda2",
+    "timestamp": "2026-09-03T11:20:50.354296",
+    "question": "what is hallucination",
+    "ai_response": "A hallucination is a sensory perception that occurs in the absence of an external",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 29.1,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 67.0,
+      "reasoning": "Moderate relevance (67.0/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7423,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.7,
+      "reasoning": "Low accuracy (2.7/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0339,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external",
+            "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.05).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 75.0,
+      "reasoning": "Moderate completeness (75.0/100). The response addresses main points but leaves out requested details.",
+      "details": {
+        "word_count": 14,
+        "covered_aspects": [
+          "Primary query intent"
+        ],
+        "missing_aspects": [
+          "Elaboration on key points"
+        ]
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external",
+        "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.05).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 29.1/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 67.0/100, Accuracy: 2.7/100, Completeness: 75.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "chunk_index": 0,
+          "answer": "February 7, 2016",
+          "source_id": "squad_1",
+          "category": "Sports History",
+          "dataset": "squad",
+          "question": "When was Super Bowl 50 played?"
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "source_id": "squad_3",
+          "chunk_index": 0,
+          "category": "Astronomy & Earth Science",
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "question": "What causes the Earth's seasons?",
+          "dataset": "squad"
+        }
+      }
+    ]
+  },
+  {
+    "id": "4afeb8d2-62b8-4d29-bc70-7a1eb8047a7a",
+    "timestamp": "2026-09-03T11:20:45.281054",
+    "question": "what is hallucination",
+    "ai_response": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.  The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 34.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 70.5,
+      "reasoning": "Moderate relevance (70.5/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7923,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 0.6,
+      "reasoning": "Low accuracy (0.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0071,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality",
+            "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+            "explanation": "Claim 'The term originates from the Latin hallucinari, meaning \"to ...' is ungrounded or contradicts reference context (Similarity: 0.11).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 35,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality",
+        "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+        "explanation": "Claim 'The term originates from the Latin hallucinari, meaning \"to ...' is ungrounded or contradicts reference context (Similarity: 0.11).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 34.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 70.5/100, Accuracy: 0.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "category": "Sports History",
+          "chunk_index": 0,
+          "question": "When was Super Bowl 50 played?",
+          "source_id": "squad_1",
+          "answer": "February 7, 2016",
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "question": "What causes the Earth's seasons?",
+          "chunk_index": 0,
+          "dataset": "squad",
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "category": "Astronomy & Earth Science",
+          "source_id": "squad_3"
+        }
+      }
+    ]
+  },
+  {
+    "id": "f8f3d420-6acd-40ae-b8b0-d4e8066e5545",
+    "timestamp": "2026-09-03T09:22:56.402580",
+    "question": "what is hallucination",
+    "ai_response": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.  The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 34.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 70.5,
+      "reasoning": "Moderate relevance (70.5/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7923,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 0.6,
+      "reasoning": "Low accuracy (0.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0071,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality",
+            "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+            "explanation": "Claim 'The term originates from the Latin hallucinari, meaning \"to ...' is ungrounded or contradicts reference context (Similarity: 0.11).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 35,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality",
+        "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+        "explanation": "Claim 'The term originates from the Latin hallucinari, meaning \"to ...' is ungrounded or contradicts reference context (Similarity: 0.11).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 34.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 70.5/100, Accuracy: 0.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "dataset": "squad",
+          "category": "Sports History",
+          "chunk_index": 0,
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?",
+          "answer": "February 7, 2016"
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "chunk_index": 0,
+          "dataset": "squad",
+          "category": "Astronomy & Earth Science",
+          "source_id": "squad_3",
+          "question": "What causes the Earth's seasons?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "1ec33fa6-6c9d-4325-817b-80d722c6457e",
+    "timestamp": "2026-09-03T09:22:51.397944",
+    "question": "what is hallucination",
+    "ai_response": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.  The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+    "reference_answer": null,
+    "source_document": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. It was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+    "overall_score": 35.1,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 70.5,
+      "reasoning": "Moderate relevance (70.5/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7923,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 4.1,
+      "reasoning": "Low accuracy (4.1/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0511,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 209
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality",
+            "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.01).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+            "explanation": "Claim 'The term originates from the Latin hallucinari, meaning \"to ...' is ungrounded or contradicts reference context (Similarity: 0.02).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 35,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality",
+        "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.01).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+        "explanation": "Claim 'The term originates from the Latin hallucinari, meaning \"to ...' is ungrounded or contradicts reference context (Similarity: 0.02).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 35.1/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 70.5/100, Accuracy: 4.1/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "5ec27bc5-d6af-4d42-88fa-c6ae84f7083b",
+    "timestamp": "2026-09-03T09:17:08.157247",
+    "question": "When and where was Super Bowl 50 played?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+    "reference_answer": null,
+    "source_document": "Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. It was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+    "overall_score": 91.1,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 74.8,
+      "reasoning": "Moderate relevance (74.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.8121,
+        "keyword_overlap_ratio": 0.6,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 84.6,
+      "reasoning": "Moderate accuracy (84.6/100). Response is partially accurate but contains minor factual variances or missing numerical values.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.8701,
+        "numerical_entity_accuracy": 0.75,
+        "reference_length": 209
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). 1/1 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 1,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 16,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 91.1/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 74.8/100, Accuracy: 84.6/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "ef6e3072-4411-45aa-9f59-cd7ad57b0537",
+    "timestamp": "2026-09-03T09:15:57.031093",
+    "question": "what is hallucination",
+    "ai_response": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 34.9,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 70.8,
+      "reasoning": "Moderate relevance (70.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7973,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.9,
+      "reasoning": "Low accuracy (2.9/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.036,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.",
+            "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.08).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 22,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.",
+        "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.08).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 34.9/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 70.8/100, Accuracy: 2.9/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "chunk_index": 0,
+          "dataset": "squad",
+          "category": "Sports History",
+          "source_id": "squad_1",
+          "question": "When was Super Bowl 50 played?",
+          "answer": "February 7, 2016"
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "source_id": "squad_3",
+          "category": "Astronomy & Earth Science",
+          "chunk_index": 0,
+          "question": "What causes the Earth's seasons?",
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "dataset": "squad"
+        }
+      }
+    ]
+  },
+  {
+    "id": "98623153-da82-46a6-a0dc-62c2bb6fc008",
+    "timestamp": "2026-09-03T09:15:53.756936",
+    "question": "what is hallucination",
+    "ai_response": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 34.9,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 70.8,
+      "reasoning": "Moderate relevance (70.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7973,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 2.9,
+      "reasoning": "Low accuracy (2.9/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.036,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.",
+            "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.08).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 22,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.",
+        "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.08).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 34.9/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 70.8/100, Accuracy: 2.9/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "answer": "February 7, 2016",
+          "chunk_index": 0,
+          "source_id": "squad_1",
+          "category": "Sports History",
+          "question": "When was Super Bowl 50 played?",
+          "dataset": "squad"
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "source_id": "squad_3",
+          "chunk_index": 0,
+          "dataset": "squad",
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "question": "What causes the Earth's seasons?",
+          "category": "Astronomy & Earth Science"
+        }
+      }
+    ]
+  },
+  {
+    "id": "3c6c00b7-ff63-4b32-a0da-33721861232b",
+    "timestamp": "2026-09-03T09:15:21.202921",
+    "question": "what is hallucination",
+    "ai_response": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality.  The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 34.2,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 70.5,
+      "reasoning": "Moderate relevance (70.5/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7923,
+        "keyword_overlap_ratio": 0.5,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 0.6,
+      "reasoning": "Low accuracy (0.6/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0071,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality",
+            "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+            "explanation": "Claim 'The term originates from the Latin hallucinari, meaning \"to ...' is ungrounded or contradicts reference context (Similarity: 0.11).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 35,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "A hallucination is a sensory perception that occurs in the absence of an external stimulus but possesses the compelling sense of reality",
+        "explanation": "Claim 'A hallucination is a sensory perception that occurs in the a...' is ungrounded or contradicts reference context (Similarity: 0.06).",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "The term originates from the Latin hallucinari, meaning \"to wander in the mind.\"",
+        "explanation": "Claim 'The term originates from the Latin hallucinari, meaning \"to ...' is ungrounded or contradicts reference context (Similarity: 0.11).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 34.2/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 70.5/100, Accuracy: 0.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "answer": "February 7, 2016",
+          "chunk_index": 0,
+          "category": "Sports History",
+          "source_id": "squad_1",
+          "dataset": "squad",
+          "question": "When was Super Bowl 50 played?"
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "category": "Astronomy & Earth Science",
+          "chunk_index": 0,
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "source_id": "squad_3",
+          "dataset": "squad",
+          "question": "What causes the Earth's seasons?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "d96a16ae-2f31-4159-870c-beeed213b326",
+    "timestamp": "2026-09-03T09:13:55.370998",
+    "question": "what is hallucination",
+    "ai_response": "hallucinatioon is process of hallucinating people",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 28.0,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 55.6,
+      "reasoning": "Low relevance (55.6/100). High topic drift or question-deafness detected; response fails to address the prompt.",
+      "details": {
+        "semantic_similarity": 0.7945,
+        "keyword_overlap_ratio": 0.0,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 7.7,
+      "reasoning": "Low accuracy (7.7/100). Response contradicts ground-truth reference evidence.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.0969,
+        "numerical_entity_accuracy": 0.0,
+        "reference_length": 16
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "hallucinatioon is process of hallucinating people",
+            "explanation": "Claim 'hallucinatioon is process of hallucinating people...' is ungrounded or contradicts reference context (Similarity: 0.08).",
+            "severity": "HIGH"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 75.0,
+      "reasoning": "Moderate completeness (75.0/100). The response addresses main points but leaves out requested details.",
+      "details": {
+        "word_count": 6,
+        "covered_aspects": [
+          "Primary query intent"
+        ],
+        "missing_aspects": [
+          "Elaboration on key points"
+        ]
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "hallucinatioon is process of hallucinating people",
+        "explanation": "Claim 'hallucinatioon is process of hallucinating people...' is ungrounded or contradicts reference context (Similarity: 0.08).",
+        "severity": "HIGH"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 28.0/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 55.6/100, Accuracy: 7.7/100, Completeness: 75.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "squad_1_chunk_0",
+        "text": "Context: Super Bowl 50 was an American football game to determine the champion of the National Football League (NFL) for the 2015 season. The American Football Conference (AFC) champion Denver Broncos defeated the National Football Conference (NFC) champion Carolina Panthers 24-10. The game was played on February 7, 2016, at Levi's Stadium in Santa Clara, California.",
+        "score": 0.0887,
+        "dataset": "squad",
+        "source_id": "squad_1",
+        "metadata": {
+          "question": "When was Super Bowl 50 played?",
+          "source_id": "squad_1",
+          "category": "Sports History",
+          "answer": "February 7, 2016",
+          "dataset": "squad",
+          "chunk_index": 0
+        }
+      },
+      {
+        "chunk_id": "squad_3_chunk_0",
+        "text": "Context: Earth's seasons are caused by its axial tilt of approximately 23.5 degrees relative to its orbital plane around the Sun. As Earth orbits the Sun throughout the year, different hemispheres receive varying intensities of solar radiation.\nQuestion: What causes the Earth's seasons?\nReference Answer: Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+        "score": 0.0426,
+        "dataset": "squad",
+        "source_id": "squad_3",
+        "metadata": {
+          "answer": "Earth's seasons are caused by its 23.5-degree axial tilt as it orbits the Sun.",
+          "chunk_index": 0,
+          "category": "Astronomy & Earth Science",
+          "question": "What causes the Earth's seasons?",
+          "dataset": "squad",
+          "source_id": "squad_3"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5a1fc90d-3794-464c-8bd8-a33231d675fe",
+    "timestamp": "2026-09-03T09:12:53.793615",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 55.0,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 65.8,
+      "reasoning": "Moderate relevance (65.8/100). Response touches on key concepts but includes tangential or indirect information.",
+      "details": {
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "is_on_topic": true,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 87.2,
+      "reasoning": "High accuracy (87.2/100). The AI response aligns closely with the ground-truth facts and reference data.",
+      "details": {
+        "has_ground_truth": true,
+        "semantic_truth_alignment": 0.8404,
+        "numerical_entity_accuracy": 1.0,
+        "reference_length": 86
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing in source text.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+            "severity": "HIGH"
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+            "severity": "MEDIUM"
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% ...' is ungrounded or contradicts reference context (Similarity: 0.79). Negation/factuality contradiction detected. Extreme claim exaggeration detected.",
+        "severity": "HIGH"
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanent...' is ungrounded or contradicts reference context (Similarity: 0.33).",
+        "severity": "MEDIUM"
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 55.0/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 65.8/100, Accuracy: 87.2/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
     "id": "4fc4641a-cac5-4e0a-870e-d364a62ed9d8",
     "timestamp": "2026-08-27T15:59:28.365761",
     "question": "Do humans only use 10 percent of their brains?",

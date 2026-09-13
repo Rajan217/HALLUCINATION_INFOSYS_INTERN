@@ -24,6 +24,8 @@ class FlaggedClaim(BaseModel):
     claim_text: str = Field(..., description="Sub-span or claim text extracted from AI response")
     explanation: str = Field(..., description="Why this claim is flagged as ungrounded or contradictory")
     severity: str = Field("MEDIUM", description="Severity level: LOW, MEDIUM, or HIGH")
+    category: Optional[str] = Field("UNGROUNDED", description="Category: UNGROUNDED, CONTRADICTION, EXAGGERATION, FABRICATED_CITATION")
+    supporting_evidence: Optional[str] = Field(None, description="Matched or contrasting evidence snippet from context")
 
 class EvaluationVerdict(BaseModel):
     id: str = Field(..., description="Unique submission evaluation UUID")
