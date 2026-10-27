@@ -13,11 +13,26 @@ class VectorStoreManager:
     """
     def __init__(self, collection_name: str = "reference_knowledge_base"):
         self.collection_name = collection_name
-        self.client = chromadb.PersistentClient(path=str(CHROMA_DB_DIR))
-        self.collection = self.client.get_or_create_collection(
-            name=self.collection_name,
-            metadata={"hnsw:space": "cosine"}
-        )
+        try:
+            self.client = chromadb.PersistentClient(path=str(CHROMA_DB_DIR))
+            self.collection = self.client.get_or_create_collection(
+                name=self.collection_name,
+                metadata={"hnsw:space": "cosine"}
+            )
+        except (Exception, BaseException) as e:
+            logger.warning(f"ChromaDB initialization failed ({e}). Resetting database directory...")
+            import shutil
+            if CHROMA_DB_DIR.exists():
+                try:
+                    shutil.rmtree(CHROMA_DB_DIR, ignore_errors=True)
+                except Exception:
+                    pass
+            CHROMA_DB_DIR.mkdir(parents=True, exist_ok=True)
+            self.client = chromadb.PersistentClient(path=str(CHROMA_DB_DIR))
+            self.collection = self.client.get_or_create_collection(
+                name=self.collection_name,
+                metadata={"hnsw:space": "cosine"}
+            )
 
     def add_chunks(self, chunks: List[Dict[str, Any]]) -> int:
         if not chunks:

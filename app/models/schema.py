@@ -35,7 +35,7 @@ class EvaluationVerdict(BaseModel):
     reference_answer: Optional[str] = None
     source_document: Optional[str] = None
     overall_score: float = Field(..., ge=0.0, le=100.0)
-    verdict: str = Field(..., description="PASS, NEEDS_REVIEW, or FAIL")
+    verdict: str = Field(..., description="PASS, NEEDS_IMPROVEMENT, or FAIL")
     hallucination_risk: str = Field(..., description="LOW, MEDIUM, or HIGH")
     relevance: AgentDimensionScore
     accuracy: AgentDimensionScore
@@ -71,3 +71,36 @@ class BenchmarkStatusResponse(BaseModel):
     total_chunks: int
     datasets_indexed: Dict[str, int]
     status: str
+
+# --- Milestone 3.4 Batch Evaluation Models ---
+
+class BatchItemResult(BaseModel):
+    row_index: int
+    question: str
+    ai_response: str
+    reference_answer: Optional[str] = None
+    source_document: Optional[str] = None
+    status: str = Field("SUCCESS", description="SUCCESS or ERROR")
+    error_message: Optional[str] = None
+    verdict: Optional[EvaluationVerdict] = None
+
+class BatchEvaluationResponse(BaseModel):
+    batch_id: str
+    timestamp: str = Field(default_factory=lambda: datetime.utcnow().isoformat())
+    filename: str
+    total_records: int
+    successful_records: int
+    failed_records: int
+    pass_count: int
+    needs_improvement_count: int
+    fail_count: int
+    pass_rate: float
+    needs_improvement_rate: float
+    fail_rate: float
+    avg_overall_score: float
+    avg_relevance_score: float
+    avg_accuracy_score: float
+    avg_hallucination_score: float
+    avg_completeness_score: float
+    hallucination_rate: float
+    results: List[BatchItemResult]

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: veriai-hallucination-audit
+    runtime: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python -m app.main"
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      - key: PYTHON_VERSION
+        value: 3.11.9

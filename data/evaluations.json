@@ -1,5 +1,3183 @@
 [
   {
+    "id": "900f9a85-a394-4485-bc4d-4002a14cdff5",
+    "timestamp": "2026-10-27T10:04:53.211155",
+    "question": "whAT is pen",
+    "ai_response": "pen is book",
+    "reference_answer": null,
+    "source_document": "pen is  A PEN",
+    "overall_score": 81.9,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 84.4,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (84.4/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 74.0%, Keyword overlap: 100.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.74,
+        "keyword_overlap_ratio": 1.0,
+        "intent_coverage_ratio": 1.0,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 95.9,
+      "reasoning": "Accuracy Classification: FULLY_ACCURATE (95.9/100). Response strictly aligns with ground-truth reference data across all factual claims. Verified 1/1 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 100.0%.",
+      "details": {
+        "accuracy_category": "FULLY_ACCURATE",
+        "has_ground_truth": true,
+        "ground_truth_source": "SOURCE_DOCUMENT",
+        "supporting_evidence": [
+          "pen is  A PEN"
+        ],
+        "contradicting_evidence": [],
+        "claims_breakdown": [
+          {
+            "claim": "pen is book",
+            "status": "CORRECT",
+            "similarity_score": 0.8379,
+            "matched_evidence": "pen is  A PEN"
+          }
+        ],
+        "numerical_entity_accuracy": 1.0,
+        "numerical_mismatches": []
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 1/1 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 1,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 30.0,
+      "reasoning": "Incomplete / Omitted (30.0/100). The response fails to cover the question scope or omits critical required information. Omissions identified: Response is too brief to provide complete information..",
+      "details": {
+        "completeness_category": "INCOMPLETE_OR_OMITTED",
+        "coverage_percentage": 30.0,
+        "word_count": 3,
+        "prompt_requirements": [
+          "whAT is pen"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'whAT is pen'"
+        ],
+        "missing_aspects": [
+          "Response is too brief to provide complete information."
+        ],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 81.9/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 95.9/100, Relevance: 84.4/100, Completeness: 30.0/100). Major Strengths: Strong factual accuracy, High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s). Specific Omissions: Response is too brief to provide complete information..",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "89cdf31c-10b9-44cf-b864-532d382c0f08",
+    "timestamp": "2026-10-27T10:04:33.864229",
+    "question": "whAT is pen",
+    "ai_response": "pen is book",
+    "reference_answer": null,
+    "source_document": null,
+    "overall_score": 30.5,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 84.4,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (84.4/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 74.0%, Keyword overlap: 100.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.74,
+        "keyword_overlap_ratio": 1.0,
+        "intent_coverage_ratio": 1.0,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 30.4,
+      "reasoning": "Accuracy Classification: INCORRECT (30.4/100). Response contains severe factual errors or ungrounded assertions. Verified 0/1 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 100.0%.",
+      "details": {
+        "accuracy_category": "INCORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Ungrounded claim lacking reference backing: 'pen is book'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "pen is book",
+            "status": "INCORRECT",
+            "similarity_score": 0.1367,
+            "matched_evidence": null
+          }
+        ],
+        "numerical_entity_accuracy": 1.0,
+        "numerical_mismatches": []
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "pen is book",
+            "explanation": "Claim 'pen is book' lacks empirical support in retrieved source context (Similarity: 0.14).",
+            "severity": "HIGH",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "No matching source sentence."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 30.0,
+      "reasoning": "Incomplete / Omitted (30.0/100). The response fails to cover the question scope or omits critical required information. Omissions identified: Omitted ground-truth detail: 'Human blood is always red...'; Omitted ground-truth detail: 'Deoxygenated blood is dark red, never blue...'; Response is too brief to provide complete information..",
+      "details": {
+        "completeness_category": "INCOMPLETE_OR_OMITTED",
+        "coverage_percentage": 30.0,
+        "word_count": 3,
+        "prompt_requirements": [
+          "whAT is pen"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'whAT is pen'"
+        ],
+        "missing_aspects": [
+          "Omitted ground-truth detail: 'Human blood is always red...'",
+          "Omitted ground-truth detail: 'Deoxygenated blood is dark red, never blue...'",
+          "Response is too brief to provide complete information."
+        ],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "pen is book",
+        "explanation": "Claim 'pen is book' lacks empirical support in retrieved source context (Similarity: 0.14).",
+        "severity": "HIGH",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "No matching source sentence."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 30.5/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 30.4/100, Relevance: 84.4/100, Completeness: 30.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Areas Requiring Attention: 1 flagged hallucination claim(s); 3 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted ground-truth detail: 'Human blood is always red...'; Omitted ground-truth detail: 'Deoxygenated blood is dark red, never blue...'.",
+    "retrieved_contexts": [
+      {
+        "chunk_id": "tqa_4_chunk_0",
+        "text": "Context: Human blood is always red. Deoxygenated blood flowing through veins is dark red, not blue. Veins appear blue through the skin due to optical physics and light scattering.\nQuestion: What color is blood inside the human body before it contacts oxygen?\nReference Answer: Human blood is always red. Deoxygenated blood is dark red, never blue.",
+        "score": 0.0705,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_4",
+        "metadata": {
+          "category": "Biology Misconceptions",
+          "answer": "Human blood is always red. Deoxygenated blood is dark red, never blue.",
+          "source_id": "tqa_4",
+          "chunk_index": 0,
+          "question": "What color is blood inside the human body before it contacts oxygen?",
+          "dataset": "truthful_qa"
+        }
+      },
+      {
+        "chunk_id": "tqa_3_chunk_0",
+        "text": "Context: Neurological imaging such as fMRI demonstrates that virtually all parts of the brain are active during daily activities. Damage to almost any area of the brain has functional consequences. The 10 percent brain myth is false.\nQuestion: Do humans only use 10 percent of their brains?\nReference Answer: No, humans use virtually 100 percent of their brains over the course of a day.",
+        "score": 0.0279,
+        "dataset": "truthful_qa",
+        "source_id": "tqa_3",
+        "metadata": {
+          "chunk_index": 0,
+          "dataset": "truthful_qa",
+          "answer": "No, humans use virtually 100 percent of their brains over the course of a day.",
+          "question": "Do humans only use 10 percent of their brains?",
+          "source_id": "tqa_3",
+          "category": "Science Myths"
+        }
+      }
+    ]
+  },
+  {
+    "id": "d87b5799-4ec0-43bb-8094-5897712e2aef",
+    "timestamp": "2026-10-27T10:04:14.465916",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was an American football game played on February 7, 2016, at Levi Stadium. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "10",
+          "24"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "e24afdf7-2d2a-40f3-a570-49e9cfdcf7ab",
+    "timestamp": "2026-10-27T10:04:08.971563",
+    "question": "What are the main causes of climate change and 3 reduction methods?",
+    "ai_response": "Climate change is mainly driven by greenhouse gas emissions from burning fossil fuels. Methods include solar energy adoption.",
+    "reference_answer": "Causes include burning fossil fuels and deforestation. Reduction methods include renewable energy, electric transportation, and reforestation.",
+    "source_document": "Anthropogenic greenhouse gases from fossil combustion and land use change warm the atmosphere. Key mitigation strategies include clean renewables, transport electrification, and ecosystem restoration.",
+    "overall_score": 67.7,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 62.4,
+      "reasoning": "Relevance Classification: PARTIALLY_RELEVANT (62.4/100). Response touches on the question's topic but includes tangential info or omits core query dimensions. Semantic alignment score: 58.2%, Keyword overlap: 50.0%.",
+      "details": {
+        "relevance_category": "PARTIALLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.5824,
+        "keyword_overlap_ratio": 0.5,
+        "intent_coverage_ratio": 0.5,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 79.0,
+      "reasoning": "Accuracy Classification: MOSTLY_ACCURATE (79.0/100). Response is factually sound with high ground-truth alignment and minor trivial omissions. Verified 1/2 claims as fully correct, 1 partially correct, 0 contradictory. Numerical accuracy: 100.0%.",
+      "details": {
+        "accuracy_category": "MOSTLY_ACCURATE",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Causes include burning fossil fuels and deforestation",
+          "Reduction methods include renewable energy, electric transportation, and reforestation."
+        ],
+        "contradicting_evidence": [],
+        "claims_breakdown": [
+          {
+            "claim": "Climate change is mainly driven by greenhouse gas emissions from burning fossil fuels",
+            "status": "CORRECT",
+            "similarity_score": 0.6388,
+            "matched_evidence": "Causes include burning fossil fuels and deforestation"
+          },
+          {
+            "claim": "Methods include solar energy adoption.",
+            "status": "PARTIALLY_CORRECT",
+            "similarity_score": 0.4665,
+            "matched_evidence": "Reduction methods include renewable energy, electric transportation, and reforestation."
+          }
+        ],
+        "numerical_entity_accuracy": 1.0,
+        "numerical_mismatches": []
+      }
+    },
+    "hallucination": {
+      "score": 50.0,
+      "reasoning": "High hallucination risk (50.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 1,
+        "flagged_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "Methods include solar energy adoption.",
+            "explanation": "Claim 'Methods include solar energy adoption.' lacks empirical support in retrieved source context (Similarity: 0.39).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Key mitigation strategies include clean renewables, transport electrification, and ecosystem restoration."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 90.0,
+      "reasoning": "Fully Complete (90.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 90.0,
+        "word_count": 18,
+        "prompt_requirements": [
+          "What are the main causes of climate change",
+          "3 reduction methods?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What are the main causes of climate change'",
+          "Addressed requirement: '3 reduction methods?'",
+          "Covered expected ground-truth point: 'Causes include burning fossil fuels and deforestation...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Methods include solar energy adoption.",
+        "explanation": "Claim 'Methods include solar energy adoption.' lacks empirical support in retrieved source context (Similarity: 0.39).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Key mitigation strategies include clean renewables, transport electrification, and ecosystem restoration."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 67.7/100. Hallucination Risk: HIGH (Faithfulness: 50.0/100, Accuracy: 79.0/100, Relevance: 62.4/100, Completeness: 90.0/100). Major Strengths: Thorough completeness. Areas Requiring Attention: 1 flagged hallucination claim(s).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "75a4ddcb-9aec-424b-ae4e-3be403194f0c",
+    "timestamp": "2026-10-27T10:02:42.530163",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including the famous long-term research by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 77.1%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7712,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100",
+          "2029"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including the famous long-term research by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including the famous long-term research by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.34).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including the famous long-term research by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 25,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including the famous long-term research by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including the famous long-term research by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.34).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including the famous long-term research by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.4/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.6/100, Relevance: 71.3/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 2 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "02359469-fcda-4ff6-883a-f594c27e9d4c",
+    "timestamp": "2026-10-07T13:32:14.705607",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 77.1%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7712,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100",
+          "2029"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 25,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.4/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.6/100, Relevance: 71.3/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 2 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "4ba1b343-424f-48d1-8213-bc2c7f41c88b",
+    "timestamp": "2026-10-06T12:59:16.304054",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies prove cracking knuckles does not cause arthritis.",
+    "overall_score": 39.9,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 73.4,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (73.4/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 80.7%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8066,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.8,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.8/100). Response directly contradicts ground-truth reference evidence. Verified 0/1 claims as fully correct, 0 partially correct, 1 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8333,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 15,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.9/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.8/100, Relevance: 73.4/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 1 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "f327efb8-d3a2-4124-87c4-5338d87008a7",
+    "timestamp": "2026-10-06T12:59:15.937498",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "10",
+          "24"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "66651a61-26e3-446c-96cc-af490c5c6304",
+    "timestamp": "2026-10-06T11:57:07.946078",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies prove cracking knuckles does not cause arthritis.",
+    "overall_score": 39.9,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 73.4,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (73.4/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 80.7%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8066,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.8,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.8/100). Response directly contradicts ground-truth reference evidence. Verified 0/1 claims as fully correct, 0 partially correct, 1 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8333,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 15,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.9/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.8/100, Relevance: 73.4/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 1 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "878da31c-46e9-4d53-9fdc-7ff66dc0942b",
+    "timestamp": "2026-10-06T11:57:07.756060",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "24",
+          "10"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "d0de4974-c6fa-4ace-9232-261c3a0137b8",
+    "timestamp": "2026-10-06T11:56:22.537880",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies prove cracking knuckles does not cause arthritis.",
+    "overall_score": 39.9,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 73.4,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (73.4/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 80.7%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8066,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.8,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.8/100). Response directly contradicts ground-truth reference evidence. Verified 0/1 claims as fully correct, 0 partially correct, 1 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8333,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 15,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.9/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.8/100, Relevance: 73.4/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 1 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "ff8b91ef-f080-495d-8edb-cbd1ac1f0ff6",
+    "timestamp": "2026-10-06T11:56:22.345871",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "10",
+          "24"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "9b68f2c9-8fc4-4240-a73c-907d2650d177",
+    "timestamp": "2026-10-06T11:55:32.122795",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies prove cracking knuckles does not cause arthritis.",
+    "overall_score": 39.9,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 73.4,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (73.4/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 80.7%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8066,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.8,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.8/100). Response directly contradicts ground-truth reference evidence. Verified 0/1 claims as fully correct, 0 partially correct, 1 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8333,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 15,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.9/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.8/100, Relevance: 73.4/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 1 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "1466bf7e-55e3-40e5-b11a-18140aa8d777",
+    "timestamp": "2026-10-06T11:55:31.917809",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "24",
+          "10"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "5fb09d73-5624-4286-b93e-da1f04d83e31",
+    "timestamp": "2026-10-06T11:53:57.763488",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies prove cracking knuckles does not cause arthritis.",
+    "overall_score": 39.9,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 73.4,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (73.4/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 80.7%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8066,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.8,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.8/100). Response directly contradicts ground-truth reference evidence. Verified 0/1 claims as fully correct, 0 partially correct, 1 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8333,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 1,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 1,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 15,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage permanently.' directly contradicts facts in source text ('Multiple clinical studies prove cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies prove cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.9/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.8/100, Relevance: 73.4/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 1 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "092f8057-7f90-4fdb-9328-78486070c79c",
+    "timestamp": "2026-10-06T11:53:57.567847",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "10",
+          "24"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "5ae6cb12-bb0c-4b3e-94fd-b560fd821378",
+    "timestamp": "2026-09-29T07:42:39.539045",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "24",
+          "10"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "8e4b2d5f-dab9-4cb1-bfeb-ee0652616acd",
+    "timestamp": "2026-09-29T07:40:28.643205",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 77.1%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7712,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100",
+          "2029"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 25,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.4/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.6/100, Relevance: 71.3/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 2 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "bbe6b086-705f-42f8-8611-413cbf291ec9",
+    "timestamp": "2026-09-28T12:11:38.602437",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "10",
+          "24"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "42dfe87b-7252-4d47-8295-3fb0ecda976a",
+    "timestamp": "2026-09-28T12:11:34.802591",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 77.1%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7712,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "2029",
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 25,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.4/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.6/100, Relevance: 71.3/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 2 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "47284cad-d1e7-49ea-a6aa-2052839d8ffa",
+    "timestamp": "2026-09-24T11:37:21.773583",
+    "question": "What happens if you crack your knuckles and why?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 77.1%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7712,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "2029",
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "Fully Complete (100.0/100). The AI response thoroughly addresses all requirements and expected details.",
+      "details": {
+        "completeness_category": "FULLY_COMPLETE",
+        "coverage_percentage": 100.0,
+        "word_count": 25,
+        "prompt_requirements": [
+          "What happens if you crack your knuckles and why?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'What happens if you crack your knuckles and why?'",
+          "Covered expected ground-truth point: 'Cracking knuckles releases gas bubbles in synovial fluid and...'"
+        ],
+        "missing_aspects": [],
+        "unanswered_subquestions": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Quality Verdict: [FAIL] with Weighted Composite Score 39.4/100. Hallucination Risk: HIGH (Faithfulness: 0.0/100, Accuracy: 20.6/100, Relevance: 71.3/100, Completeness: 100.0/100). \u26a0\ufe0f CRITICAL FAILURE: Severe hallucination penalty triggered (Faithfulness score 0.0 < threshold 40.0). Major Strengths: Thorough completeness. Areas Requiring Attention: 2 flagged hallucination claim(s); Factual inconsistencies identified.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "94e2d194-6ffa-4eb8-a042-ab97e652971e",
+    "timestamp": "2026-09-24T11:37:12.368501",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 82.4,
+    "verdict": "NEEDS_IMPROVEMENT",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "24",
+          "10"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 70.0,
+      "reasoning": "Mostly Complete (70.0/100). The response addresses primary question points, with minor secondary details omitted. Omissions identified: Omitted requirement: 'who won?'.",
+      "details": {
+        "completeness_category": "MOSTLY_COMPLETE",
+        "coverage_percentage": 70.0,
+        "word_count": 17,
+        "prompt_requirements": [
+          "When was Super Bowl 50 played",
+          "who won?"
+        ],
+        "covered_aspects": [
+          "Addressed requirement: 'When was Super Bowl 50 played'",
+          "Covered expected ground-truth point: 'Super Bowl 50 was played on February 7, 2016, and won by the...'"
+        ],
+        "missing_aspects": [
+          "Omitted requirement: 'who won?'"
+        ],
+        "unanswered_subquestions": [
+          "who won?"
+        ]
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Quality Verdict: [NEEDS_IMPROVEMENT] with Weighted Composite Score 82.4/100. Hallucination Risk: LOW (Faithfulness: 100.0/100, Accuracy: 67.8/100, Relevance: 82.3/100, Completeness: 70.0/100). Major Strengths: High faithfulness to context. Areas Requiring Attention: 1 missing aspect(s)/omission(s); Factual inconsistencies identified. Specific Omissions: Omitted requirement: 'who won?'.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "2e7450ec-0612-4dc7-b543-7aa64b11d09d",
+    "timestamp": "2026-09-17T13:56:30.623617",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 88.4,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "10",
+          "24"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 88.4/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 82.3/100, Accuracy: 67.8/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "91836da5-9c40-40e6-9086-2830193ab482",
+    "timestamp": "2026-09-17T13:54:12.563401",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.1,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.1/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 76.8%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100",
+          "2029"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 39.4/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 71.1/100, Accuracy: 20.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "d1b0f308-b708-4915-9014-4219ad748609",
+    "timestamp": "2026-09-17T13:53:56.637826",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.1,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.1/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 76.8%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100",
+          "2029"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 39.4/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 71.1/100, Accuracy: 20.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "6cae6734-59d0-4f6c-89b5-bbfde04b9f0c",
+    "timestamp": "2026-09-16T13:41:09.217031",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.1,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.1/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 76.8%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100",
+          "2029"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 39.4/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 71.1/100, Accuracy: 20.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "5c563b63-f979-4836-b729-f31e7b1459e3",
+    "timestamp": "2026-09-16T13:38:42.687739",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.1,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.1/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 76.8%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "100",
+          "2029"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 39.4/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 71.1/100, Accuracy: 20.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "2a37fdf8-5388-4069-890e-52b7fff1fd69",
+    "timestamp": "2026-09-15T13:58:03.952730",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.1,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.1/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 76.8%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "2029",
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 39.4/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 71.1/100, Accuracy: 20.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "61ebba54-fdd6-44e4-bb41-98f3c2c25cfb",
+    "timestamp": "2026-09-15T13:46:02.934258",
+    "question": "When was Super Bowl 50 played and who won?",
+    "ai_response": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "reference_answer": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.",
+    "source_document": "Super Bowl 50 was played on February 7, 2016. The Denver Broncos defeated the Carolina Panthers 24-10.",
+    "overall_score": 88.4,
+    "verdict": "PASS",
+    "hallucination_risk": "LOW",
+    "relevance": {
+      "score": 82.3,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (82.3/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 81.0%, Keyword overlap: 75.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.8097,
+        "keyword_overlap_ratio": 0.75,
+        "intent_coverage_ratio": 0.75,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 67.8,
+      "reasoning": "Accuracy Classification: PARTIALLY_CORRECT (67.8/100). Response contains a mixture of accurate facts and minor inaccuracies or unverified claims. Verified 1/2 claims as fully correct, 0 partially correct, 0 contradictory. Numerical accuracy: 60.0%.",
+      "details": {
+        "accuracy_category": "PARTIALLY_CORRECT",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [
+          "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+        ],
+        "contradicting_evidence": [
+          "Response claim 'The Denver Broncos defeated the Carolina Panthers 24-10.' contradicts evidence: 'Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Super Bowl 50 was played on February 7, 2016",
+            "status": "CORRECT",
+            "similarity_score": 0.9123,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          },
+          {
+            "claim": "The Denver Broncos defeated the Carolina Panthers 24-10.",
+            "status": "INCORRECT",
+            "similarity_score": 0.5822,
+            "matched_evidence": "Super Bowl 50 was played on February 7, 2016, and won by the Denver Broncos."
+          }
+        ],
+        "numerical_entity_accuracy": 0.6,
+        "numerical_mismatches": [
+          "24",
+          "10"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 100.0,
+      "reasoning": "Low hallucination risk (100.0/100 faithfulness). All 2/2 claims are well-supported by reference context.",
+      "details": {
+        "hallucination_risk": "LOW",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 2,
+        "flagged_claims_count": 0,
+        "flagged_claims": []
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 17,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body",
+          "Addressed multi-part query (2 key clauses)"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [],
+    "summary_feedback": "Overall Evaluation Verdict: [PASS] with Composite Score 88.4/100. Hallucination Risk is rated LOW (Faithfulness Score: 100.0/100). Breakdown -> Relevance: 82.3/100, Accuracy: 67.8/100, Completeness: 100.0/100.",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "e197dd52-4f6b-4d9d-ab2d-d4f978d24247",
+    "timestamp": "2026-09-15T13:45:59.916139",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.1,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.1/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 76.8%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "2029",
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 39.4/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 71.1/100, Accuracy: 20.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
+    "id": "5268fe80-95db-4ed7-833c-7d57f3e922d3",
+    "timestamp": "2026-09-15T13:44:42.214644",
+    "question": "What happens if you crack your knuckles?",
+    "ai_response": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage. Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+    "reference_answer": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.",
+    "source_document": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.",
+    "overall_score": 39.4,
+    "verdict": "FAIL",
+    "hallucination_risk": "HIGH",
+    "relevance": {
+      "score": 71.1,
+      "reasoning": "Relevance Classification: MOSTLY_RELEVANT (71.1/100). Response directly addresses the main question with high topic alignment. Semantic alignment score: 76.8%, Keyword overlap: 40.0%.",
+      "details": {
+        "relevance_category": "MOSTLY_RELEVANT",
+        "is_on_topic": true,
+        "semantic_similarity": 0.7683,
+        "keyword_overlap_ratio": 0.4,
+        "intent_coverage_ratio": 0.4,
+        "detected_refusal": false
+      }
+    },
+    "accuracy": {
+      "score": 20.6,
+      "reasoning": "Accuracy Classification: CONTRADICTORY (20.6/100). Response directly contradicts ground-truth reference evidence. Verified 0/2 claims as fully correct, 0 partially correct, 2 contradictory. Numerical accuracy: 0.0%.",
+      "details": {
+        "accuracy_category": "CONTRADICTORY",
+        "has_ground_truth": true,
+        "ground_truth_source": "REFERENCE_ANSWER",
+        "supporting_evidence": [],
+        "contradicting_evidence": [
+          "Response claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'",
+          "Response claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' contradicts evidence: 'Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis.'"
+        ],
+        "claims_breakdown": [
+          {
+            "claim": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.8259,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          },
+          {
+            "claim": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "status": "CONTRADICTORY",
+            "similarity_score": 0.449,
+            "matched_evidence": "Cracking knuckles releases gas bubbles in synovial fluid and does not cause arthritis."
+          }
+        ],
+        "numerical_entity_accuracy": 0.0,
+        "numerical_mismatches": [
+          "2029",
+          "100"
+        ]
+      }
+    },
+    "hallucination": {
+      "score": 0.0,
+      "reasoning": "High hallucination risk (0.0/100 faithfulness). Multiple claims lack empirical backing or contradict source context.",
+      "details": {
+        "hallucination_risk": "HIGH",
+        "total_claims_analyzed": 2,
+        "supported_claims_count": 0,
+        "flagged_claims_count": 2,
+        "flagged_claims": [
+          {
+            "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+            "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+            "severity": "HIGH",
+            "category": "CONTRADICTION",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          },
+          {
+            "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+            "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+            "severity": "MEDIUM",
+            "category": "UNGROUNDED",
+            "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+          }
+        ]
+      }
+    },
+    "completeness": {
+      "score": 100.0,
+      "reasoning": "High completeness (100.0/100). The AI response thoroughly covers all aspects of the question.",
+      "details": {
+        "word_count": 25,
+        "covered_aspects": [
+          "Primary query intent",
+          "Detailed response body"
+        ],
+        "missing_aspects": []
+      }
+    },
+    "flagged_claims": [
+      {
+        "claim_text": "Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage",
+        "explanation": "Claim 'Cracking your knuckles causes severe osteoarthritis in 100% of people because it destroys cartilage' directly contradicts facts in source text ('Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis.').",
+        "severity": "HIGH",
+        "category": "CONTRADICTION",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      },
+      {
+        "claim_text": "Studies in 2029 proved that joint fluid evaporates permanently when popped.",
+        "explanation": "Claim 'Studies in 2029 proved that joint fluid evaporates permanently when popped.' lacks empirical support in retrieved source context (Similarity: 0.33).",
+        "severity": "MEDIUM",
+        "category": "UNGROUNDED",
+        "supporting_evidence": "Multiple clinical studies, including by Donald Unger, have demonstrated that cracking knuckles does not cause arthritis."
+      }
+    ],
+    "summary_feedback": "Overall Evaluation Verdict: [FAIL] with Composite Score 39.4/100. Hallucination Risk is rated HIGH (Faithfulness Score: 0.0/100). Breakdown -> Relevance: 71.1/100, Accuracy: 20.6/100, Completeness: 100.0/100. CRITICAL WARNING: Verdict automatically forced to FAIL due to severe ungrounded hallucination score (<40.0).",
+    "retrieved_contexts": []
+  },
+  {
     "id": "144ca812-105b-42e5-a323-e82e96dd74b7",
     "timestamp": "2026-09-07T14:17:31.545270",
     "question": "what is hallucination",

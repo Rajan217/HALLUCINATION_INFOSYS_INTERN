@@ -1,6 +1,6 @@
 # VeriAI — LLM Evaluation & Multi-Agent Hallucination Detection Platform
 
-> **Milestone 1 & Milestone 2 Submission Complete**: LLM Evaluation Foundation, System Architecture, RAG Reference Knowledge Base (TruthfulQA & SQuAD), Evaluation Judge Agents (Relevance, Accuracy, Hallucination Detection), and Agent Consistency Validation Suite.
+> **Milestone 1, Milestone 2 & Milestone 3 Submission Complete**: LLM Evaluation Foundation, System Architecture, RAG Reference Knowledge Base (TruthfulQA & SQuAD), Evaluation Judge Agents (Relevance, Accuracy, Hallucination Detection, Completeness), Verdict Agent & Executive Summary Synthesis, Per-Dimension Interactive Results Dashboard, and Automated CSV Batch Evaluation Module.
 
 ---
 
@@ -14,8 +14,10 @@
 - **M2.1 — Relevance Judge Agent**: Evaluates response relevance on a 5-tier scale (`FULLY_RELEVANT`, `MOSTLY_RELEVANT`, `PARTIALLY_RELEVANT`, `UNRELATED`, `OFF_TOPIC_OR_REFUSAL`), checking intent coverage and handling non-committal refusals.
 - **M2.2 — Accuracy Judge Agent**: Evaluates factual correctness on a 5-tier scale (`FULLY_ACCURATE`, `MOSTLY_ACCURATE`, `PARTIALLY_CORRECT`, `INCORRECT`, `CONTRADICTORY`), comparing claims against reference answers or RAG-retrieved chunks, extracting **supporting evidence** and **contradicting evidence**, and verifying numerical entities.
 - **M2.3 — Hallucination Detection Agent**: Decomposes responses into atomic claims, cross-references against RAG source context, flags specific hallucinated sub-spans with violation category tags (`UNGROUNDED`, `CONTRADICTION`, `EXAGGERATION`, `FABRICATED_CITATION`), and assigns risk tiers (`LOW`, `MEDIUM`, `HIGH`).
-- **M2.4 — Agent Evaluation & Consistency Validation Suite**: Comprehensive benchmark validation script (`run_m2_validation.py`) and test suite (`tests/test_benchmark_validation.py`) evaluating TruthfulQA, SQuAD, and edge cases. Achieved **100% benchmark accuracy** and **100% hallucination precision/recall**.
-- **Modern Interactive Web Dashboard**: Premium glassmorphic interface for real-time evaluation submission, live visual meter feedback, ground-truth supporting evidence snippets, claim category badges, RAG vector search exploration, and benchmark management.
+- **M3.1 — Completeness Judge Agent**: Extracts prompt sub-questions and ground-truth key facts, identifies specific omissions, and categorizes completeness on a 4-tier scale (`FULLY_COMPLETE`, `MOSTLY_COMPLETE`, `PARTIALLY_COMPLETE`, `INCOMPLETE_OR_OMITTED`).
+- **M3.2 — Verdict Agent & Executive Summary Synthesis**: Combines all 4 judge dimension scores using a weighted model (35% Hallucination, 25% Accuracy, 20% Relevance, 20% Completeness), applies critical failure overrides (severe ungrounded hallucination, off-topic refusal, factual contradiction), determines overall quality verdict (`PASS`, `NEEDS_IMPROVEMENT`, `FAIL`), and synthesizes an executive reasoning report.
+- **M3.3 — Per-Dimension Interactive Dashboard**: Glassmorphic UI featuring weighted composite gauges, 4 agent dimension score meters, ground-truth evidence snippets, flagged claim cards, coverage/omissions analysis, and modal inspection views.
+- **M3.4 — Batch Evaluation Module**: Upload CSV files containing question-answer pairs for automated batch evaluation, calculate batch aggregate statistics (Pass Rate %, Avg Composite Score, Hallucination Frequency Rate %), filter table rows, inspect row details in an overlay modal, and export results to downloadable CSV.
 
 ---
 
@@ -151,6 +153,20 @@ pytest tests/
 
 ## 📄 Documentation Artifacts
 
+- 📋 [Agile Project Management & Sprint Lifecycle](docs/AGILE.md) (`Scrumban, Epics, Stories, DoD/DoR & Burndown`)
 - 📕 [Research & Technical Understanding](docs/research_and_tech_stack.md) (`M1.1`)
 - 📘 [System Architecture & Agent Specification](docs/architecture.md) (`M1.2`)
 - 📗 [Milestone 2 Walkthrough & Validation Report](docs/walkthrough.md) (`M2.1 - M2.4`)
+- 📙 [Milestone 3 Walkthrough & Verification Guide](docs/m3_walkthrough.md) (`M3.1 - M3.4`)
+- 📊 [Milestone 4 Analytics Dashboard & PDF Exporter](docs/m4_dashboard_and_pdf.md) (`M4`)
+- 📑 [Comprehensive Project Report & Technical Specification](docs/project_report.md)
+- 🔬 [AI Systems Empirical Comparison Demo Report](docs/ai_systems_comparison_demo.md)
+- 🌐 [Production Cloud Deployment Guide (Render, HF Spaces, Railway, Docker)](docs/DEPLOYMENT.md)
+
+---
+
+## 📜 License
+
+This project is open-source software licensed under the [MIT License](LICENSE).
+Copyright (c) 2026 VeriAI Contributors & Infosys Springboard Internship Team.
+
